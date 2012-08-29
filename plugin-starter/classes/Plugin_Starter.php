@@ -60,14 +60,6 @@ class Plugin_Starter {
 	 * Load plugin definitions
 	 * @return void
 	 */
-	function plugin_starterdefinitions() {
-
-	}
-	
-	/**
-	 * Load plugin definitions
-	 * @return void
-	 */
 	function definitions() {
 
 		if ( !defined( 'PLUGINSTARTER' ) )					define( 'PLUGINSTARTER', 				'plugin-starter' );
@@ -85,7 +77,7 @@ class Plugin_Starter {
 		define( 'PLUGINSTARTER_TEMPLATEPATH' , $this->template_directory );
 		
 	}
-	
+
 	/**
 	 * Loading the gettext textdomain first from the WP languages directory,
 	 * and if that fails try the subfolder /languages/ in the plugin directory.
