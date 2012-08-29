@@ -576,7 +576,7 @@ class WP_Dev_Network {
 			
 			$result = $this->process();
 			
-			dev_debug($_POST);
+			//dev_debug($_POST);
 			
 			// empty API info if non-member is returned from server
 			if ( is_array( $result ) && !$result['membership'] ) {
@@ -1102,7 +1102,7 @@ class WP_Dev_Network {
 				}
 			}
 		}
-		dev_debug($projects);
+		//dev_debug($projects);
 		return $projects;
 	}
 
