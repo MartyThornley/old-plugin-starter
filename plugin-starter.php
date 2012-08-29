@@ -24,11 +24,14 @@
  * This plugin framework was built in part due to the work of austinpassy as part of development of another plugin, yet to be released.
  *
  */
-
+	// define this for testing locally
+	define( 'PLUGINSTARTER_LOCAL' , true );
+	
 	if ( !defined( 'PLUGINSTARTER_DEBUG' ) ) 			define( 'PLUGINSTARTER_DEBUG', 			false );
 	if ( !defined( 'PLUGINSTARTER_PATH' ) )				define( 'PLUGINSTARTER_PATH',			plugin_dir_path( __FILE__ ) . '/plugin-starter' );
-	if ( !defined( 'PLUGINSTARTER_URL' ) )				define( 'PLUGINSTARTER_URL',			plugin_dir_url( __FILE__ ) );
+	if ( !defined( 'PLUGINSTARTER_URL' ) )				define( 'PLUGINSTARTER_URL',			plugin_dir_url( __FILE__ ) . '/plugin-starter' );
 
 	require_once( trailingslashit( PLUGINSTARTER_PATH ) . 'classes/Plugin_Starter.php' );		
+	require_once( trailingslashit( PLUGINSTARTER_PATH ) . 'functions/functions.php' );	
 
 ?>

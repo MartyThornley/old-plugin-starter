@@ -53,8 +53,8 @@ class WP_Dev_Network {
 		// currently just does a var_dump
 		// add_filter( 'plugins_api_result', array( &$this, 'filter_plugin_info' ), 10, 3 );  
 
-		$this->plugin_dir = WP_DEV_NETWORK_PATH;
-		$this->plugin_url = WP_DEV_NETWORK_URL;
+		$this->plugin_dir = PLUGINSTARTER_PATH;
+		$this->plugin_url = PLUGINSTARTER_URL;
 
 		//get admin page location
 		if ( function_exists( 'is_multisite' ) && is_multisite() ) {
@@ -337,7 +337,7 @@ class WP_Dev_Network {
 		// save response so we don't hae to check everytime
 		update_site_option( $this->network.'_last_response', $response );
 		
-		if ( defined( 'DEV_TESTING_LOCAL' ) || wp_remote_retrieve_response_code( $response ) == 200 ) {
+		if ( defined( 'PLUGINSTARTER_LOCAL' ) || wp_remote_retrieve_response_code( $response ) == 200 ) {
 			$data = $response['body'];
 			if ( $data != 'error' ) {
 				$data = unserialize( $data );
