@@ -6,8 +6,8 @@ After putting work into this a couple years back, I realized it was not an appro
 
 * I added too much. A lot of plugins are simple and there is no need to over think it all.
 * It basically added a new API that needed to be learned to use it.
-** That is one of the reasons I have shoed away from theme frameworks.
-** Each time I went back to it, I forgot how to use it myself.
+  * That is one of the reasons I have shoed away from theme frameworks.
+  * Each time I went back to it, I forgot how to use it myself.
 
 ## So What Now?
 
